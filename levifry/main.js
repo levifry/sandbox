@@ -6,6 +6,6 @@ document.addEventListener('DOMContentLoaded', function () {
     window.location.reload(true);
   }
 
-  console.log('end main.js execution');
+  console.log('end main.js script execution');
 
 })
