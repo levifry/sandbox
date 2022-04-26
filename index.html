@@ -1,0 +1,38 @@
+<ul>
+  <li>Agile <span class="badge">15</span></li>
+  <li>Command Line <span class="badge">2</span></li>
+  <li>HTML <span class="badge">8</span></li>
+  <li>CSS <span class="badge">7</span></li>
+  <li>JavaScript <span class="badge">11</span></li>
+</ul>
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+  
+  var myElements = document.getElementsByClassName('badge');
+	
+  for(var i = 0; i < myElements.length; i++){
+
+  	var badgeNum = parseInt(myElements[i].textContent);
+    var currentBadge = myElements[i];
+    
+		console.log('Evaluating: ' + parseInt(myElements[i].textContent));
+
+    if(badgeNum < 5) {
+    	console.log('adding badge-danger');
+      currentBadge.classList.add('badge-danger');
+    } else if(badgeNum < 10) {
+    	console.log('adding badge-secondary');
+      currentBadge.classList.add('badge-secondary');
+    } else {
+    	console.log('adding badge-danger');
+      currentBadge.classList.add('badge-danger');
+    }
+	}
+
+console.log('end execution');
+  
+})
+
+</script>
