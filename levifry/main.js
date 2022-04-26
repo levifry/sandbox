@@ -8,4 +8,4 @@ document.addEventListener('DOMContentLoaded', function () {
 
   console.log('end main.js script execution');
 
-})
+});
