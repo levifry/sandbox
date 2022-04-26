@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html lang='en'>
+
+    <head>
+
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width">
+      <script src="main.js" async></script>
+      <title>Sandbox</title>
+
+      <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        
+        const form = document.getElementById('form');
+        const name = document.getElementById('name');
+        const div = document.querySelector('div');
+
+        form.onsubmit = handleSubmit;
+
+        function handleSubmit(event) {
+          console.log(name.value);
+          event.preventDefault();
+        }
+
+        form.addEventListener('click', handleClick);
+
+        function handleClick() {
+          console.log(this.value);
+          console.log(event.target.value);
+        }
+
+        console.log('end inline script execution');
+        
+      })
+      </script>
+
+    </head>
+
+    <body>
+
+      <form id="form">
+        <input type="text" value="" placeholder="First and Last Name" id="name">
+        <input type="submit">
+      </form>
+
+    </body>
+
+</html>
