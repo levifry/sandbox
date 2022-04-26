@@ -4,6 +4,8 @@ body {
   font-family: 'IBM Plex Mono', monospace;
   padding: 16px;
   font-weight: 300;
+  max-width: 100%;
+  width: 100%;
 }
 
 a, a:hover, a:visited, a:focus, a:active {
@@ -11,8 +13,24 @@ a, a:hover, a:visited, a:focus, a:active {
 }
 
 h2 {
-  font-weight:500;
+  font-weight:700;
   margin-top:48px;
   margin-left:24px;
   font-size: 16px;
+}
+
+textarea.code {
+  background-color: #2a3135;
+  color: #ffffff;
+  display: block;
+  width: 90%;
+  max-width: 90%;
+  min-height: 400px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  font-family: monospace;
+  border: 1px #ffffff26 solid;
+  border-radius: 10px;
+  padding: 16px;
+  white-space:pre-wrap;
 }
