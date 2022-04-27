@@ -1,49 +1,85 @@
-<!DOCTYPE html>
+<script>
 
-<html lang='en'>
+/*
 
-    <head>
+Outputs:
+  - string (characters)
 
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width">
-      <script src="main.js" async></script>
-      <title>Sandbox</title>
+Inputs:
+  - any number of strings
 
-      <script>
-      document.addEventListener('DOMContentLoaded', function () {
-        
-        const form = document.getElementById('form');
-        const name = document.getElementById('name');
-        const div = document.querySelector('div');
+Valid Input Types:
+  type string
 
-        form.onsubmit = handleSubmit;
+Invalid Input Types:
+  type number
+  type boolean
+  type object
+  type array
+  type null
+  type undefined
+  type NaN
 
-        function handleSubmit(event) {
-          console.log(name.value);
-          event.preventDefault();
-        }
+Example Inputs & Outputs:
+  "qwer ty" "as dfg" "asffgggd"
+  "123" "$#%%""
+  "dogmouse" "mousecat" "catdog"
 
-        form.addEventListener('click', handleClick);
+Constraints:
+  - No major constraints
 
-        function handleClick() {
-          console.log(this.value);
-          console.log(event.target.value);
-        }
+Edge cases:
+  - inputs other than string
+  - empty input
+  - only 1 paramter passed
 
-        console.log('end inline script execution');
-        
-      })
-      </script>
+Justification:
+  This function will determine which characters the given strings have in common in the order of which they appear.
 
-    </head>
+Explanation:
+  The function will use the first argument passed as a baseline, then each additional arugment will be compared to the baseline string
 
-    <body>
+Approximation:
+  Pseudocode your plan. Each line of pseudocode should be:
+    Complete (not relying on other steps to make sense to the reader)
+    Without ambiguity as to what each step means
+    As high level as possible (use helper functions to elaborate on each step)
+    Indented to show subordinate relationships with other steps
+    Translatable to one line of real code
 
-      <form id="form">
-        <input type="text" value="" placeholder="First and Last Name" id="name">
-        <input type="submit">
-      </form>
+*/
 
-    </body>
+var commonCharacters = function (string1, string2) {
+  // handle edge cases
+  console.log('Arguments:', arguments.length);
+  console.log('hello world');
+  if (string1 === "") {
+    return "";
+  }
+  // code will iterate over the first string and check
+  // define accumulator variable for output string
+  let matches = []
+  // iterate over first string
+  for (let i = 0; i < string1.length; i++) {
+    // search for character in second string
+    if (string1[i] === " ") {
+      // matches.push(" ");
+      continue;
+    }
+    for (let j = 0; j < string2.length; j++) {
+      // if character is found AND doesn't exist in output variable
+      if (string1[i] === string2[j] && !matches.includes(string2[j])) {
+        // add character to accumulator variable
+        matches.push(string2[j]);
+      }
+    }
+  }
+  // return result (accumulator variable)
+  matches = matches.join("")
+  return matches;
+};
 
-</html>
+console.log(`common characters for all strings: ${commonCharacters("c at", "banan a")}`);
+console.log(`end inline script execution`);
+
+</script>
