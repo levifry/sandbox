@@ -7,6 +7,7 @@ body {
   max-width: 100%;
   width: 100%;
   overflow-x: hidden;
+  line-height: 1.8;
 }
 
 a, a:hover, a:visited, a:focus, a:active {
@@ -35,4 +36,8 @@ textarea.code {
   padding: 16px;
   font-size: 14px;
   white-space:pre-wrap;
+}
+
+.indent {
+  margin-left: 1rem;
 }

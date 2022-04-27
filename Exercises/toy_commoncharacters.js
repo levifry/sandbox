@@ -1,4 +1,4 @@
-// Credits for this solution to @zachhaines
+// Credits for this solution: @zachhaines
 
 var commonCharacters = function (...args) {
 
