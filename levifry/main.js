@@ -4,8 +4,4 @@ document.addEventListener('DOMContentLoaded', function () {
 
 });
 
-function reloadPage() {
-  window.location.reload(true);
-}
-
-console.log('end main.js script execution');
+console.log('main.js loaded');
