@@ -1,4 +1,4 @@
-var longestRun = function(string) {
+var longestRun = string => {
 
     let longestSeries = [0,0];
 
