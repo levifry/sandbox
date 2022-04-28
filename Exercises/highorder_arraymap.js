@@ -16,4 +16,4 @@ var officers = [
 
 const officersIds = officers.map(officer => officer.id);
 
-console.log(`Officer IDs: ${officersIds}`);
+console.log(`Officer IDs: ${(officersIds)}`);
