@@ -15,9 +15,9 @@ a, a:hover, a:visited, a:focus, a:active {
 }
 
 h2 {
-  font-weight:700;
-  margin-top:48px;
-  margin-left:24px;
+  font-weight: 700;
+  margin-top: 16;
+  margin-left: 24px;
   font-size: 16px;
 }
 
@@ -31,13 +31,27 @@ textarea.code {
   overflow-y: auto;
   overflow-x: hidden;
   font-family: monospace;
-  border: 1px #ffffff26 solid;
+  border: 1px rgba(255, 255, 255, 0.15) solid;
   border-radius: 10px;
   padding: 16px;
   font-size: 14px;
   white-space:pre-wrap;
 }
 
+.cl {
+  text-decoration: none;
+}
+
 .indent {
   margin-left: 2rem;
+}
+
+.lowright {
+  position: fixed;
+  right: 3rem;
+  bottom: 2rem;
+  padding: 10px 20px 10px 20px;
+  background-color: #16191b;
+  border-radius: 16px;
+  text-decoration: none;
 }
