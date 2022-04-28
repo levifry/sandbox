@@ -1,2 +1,5 @@
 .vscode/
 .DS_Store
+.gitignore
+working.html
+working.js
