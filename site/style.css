@@ -49,9 +49,24 @@ textarea.code {
 .lowright {
   position: fixed;
   right: 3rem;
+  bottom: 6rem;
+  padding: 10px 20px 10px 20px;
+  background-color: #2a95dc;
+  border-radius: 16px;
+  min-width: 160px;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+}
+
+.lowright2 {
+  position: fixed;
+  right: 3rem;
   bottom: 2rem;
   padding: 10px 20px 10px 20px;
   background-color: #16191b;
   border-radius: 16px;
+  min-width: 160px;
+  text-align: center;
   text-decoration: none;
 }
