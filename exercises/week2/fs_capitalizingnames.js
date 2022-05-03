@@ -15,7 +15,7 @@ function myFunction(fileName){
 
     for (let fullName of linesArray) {
         let firstName = fullName.split(' ')[0].charAt(0).toUpperCase() + fullName.split(' ')[0].slice(1);
-        let lastName = fullName.split(' ')[1].charAt(0).toUpperCase() + fullName.split(' ')[1].slice(1);
+        let lastName = fullName.split(' ')[1].charAt(0).toUpperCase() + fullwebName.split(' ')[1].slice(1);
         fullName = firstName + ' ' + lastName;
         returnString = returnString + fullName + "\n";
     }
