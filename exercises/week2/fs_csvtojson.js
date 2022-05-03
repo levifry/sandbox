@@ -1,4 +1,6 @@
 var fs = require('fs');
+var path = require('path');
+const workingDir = path.resolve(process.cwd(), "exercises/week2");
 
 function myFunction(inputFileName, outputFileName){
 
@@ -7,7 +9,7 @@ function myFunction(inputFileName, outputFileName){
     let JSONString = '';
 
     // Reads an input file and returns the contents as an array of tableHeaders and an array of all tableRows
-    let fileContents = fs.readFileSync(inputFileName).toString();
+    let fileContents = fs.readFileSync(path.join(workingDir, inputFileName)).toString();
     let tableHeaders = fileContents.split('\n')[0].split(',');
     let tableRows = fileContents.split('\n');
 
@@ -42,7 +44,7 @@ function myFunction(inputFileName, outputFileName){
     JSONString = JSON.stringify(JSONArray);
   
     // Writes the contents of the JSONAString to a new file
-    fs.writeFileSync(outputFileName, JSONString);
+    fs.writeFileSync(path.join(workingDir, outputFileName), JSONString);
 
     // Deletes input file
     // fs.unlinkSync(inputFileName);
