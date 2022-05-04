@@ -1,5 +1,24 @@
 {
+  "name": "sandbox",
+  "description": "Welcome to levifry's sandbox, enjoy your stay 🌴🔆",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "app": "node app.js"
+  },
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/levifry/test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/levifry/test/issues"
+  },
+  "homepage": "https://github.com/levifry/test#readme",
   "dependencies": {
-    "lodash": "^4.17.21"
+    "lodash": "^4.17.21",
+    "node-fetch": "^3.2.4"
   }
 }

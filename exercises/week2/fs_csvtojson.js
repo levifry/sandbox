@@ -47,7 +47,7 @@ function myFunction(inputFileName, outputFileName){
     fs.writeFileSync(path.join(workingDir, outputFileName), JSONString);
 
     // Deletes input file
-    // fs.unlinkSync(inputFileName);
+    // fs.unlinkSync(path.join(workingDir, inputFileName));
   
 }
 

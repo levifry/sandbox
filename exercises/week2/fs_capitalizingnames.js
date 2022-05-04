@@ -10,7 +10,7 @@ function myFunction(fileName){
     let returnString = '';
 
     // Reads an input file and returns the contents as a string
-    let fileContents = fs.readFileSync(fileName, 'UTF-8');
+    let fileContents = fs.readFileSync(fileName, 'utf8');
     let linesArray = fileContents.split('\n');
 
     for (let fullName of linesArray) {
