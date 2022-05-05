@@ -4,7 +4,8 @@
   "version": "1.0.0",
   "main": "app.js",
   "scripts": {
-    "app": "node app.js"
+    "app": "node app.js",
+    "start": "node ./exercises/week2/cars.js"
   },
   "type": "module",
   "repository": {
